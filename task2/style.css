@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.dropdown-nav {
+    background-color: #2c3e50;
+    padding: 0 20px;
+}
+
+.dropdown-nav__list {
+    list-style: none;
+    display: flex;
+}
+
+.dropdown-nav__item {
+    position: relative;
+}
+
+.dropdown-nav__link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-nav__link:hover {
+    background-color: #3498db;
+}
+
+.dropdown-nav__submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #34495e;
+    min-width: 200px;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-nav__item:hover > .dropdown-nav__submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-nav__subitem {
+    position: relative;
+}
+
+.dropdown-nav__sublink {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.dropdown-nav__sublink:hover {
+    background-color: #3498db;
+}
+
+.dropdown-nav__submenu--nested {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #3d566e;
+}
+
+.dropdown-nav__subitem--has-dropdown > .dropdown-nav__sublink::after {
+    content: "▶";
+    float: right;
+    font-size: 0.7em;
+    margin-left: 10px;
+}
+
+.dropdown-nav__item--has-dropdown > .dropdown-nav__link::after {
+    content: "▼";
+    font-size: 0.7em;
+    margin-left: 8px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.content p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
