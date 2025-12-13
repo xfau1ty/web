@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo">
+        <h2 class="todo__title">Мой Список Дел</h2>
+        
+        <ul class="todo__list todo__list--unordered">
+            <li class="todo__item">Купить продукты</li>
+            <li class="todo__item">Закончить домашнее задание</li>
+            <li class="todo__item">Позвонить другу</li>
+            <li class="todo__item">Сходить в спортзал</li>
+            <li class="todo__item">Прочитать книгу</li>
+        </ul>
+        
+        <ol class="todo__list todo__list--ordered">
+            <li class="todo__item todo__item--main">Утро
+                <ul class="todo__sublist">
+                    <li class="todo__subitem">Зарядка</li>
+                    <li class="todo__subitem">Завтрак</li>
+                    <li class="todo__subitem">Проверить почту</li>
+                </ul>
+            </li>
+            <li class="todo__item todo__item--main">День
+                <ul class="todo__sublist">
+                    <li class="todo__subitem">Рабочие задачи</li>
+                    <li class="todo__subitem">Обед</li>
+                    <li class="todo__subitem">Встреча с коллегами</li>
+                </ul>
+            </li>
+            <li class="todo__item todo__item--main">Вечер
+                <ul class="todo__sublist">
+                    <li class="todo__subitem">Ужин</li>
+                    <li class="todo__subitem">Отдых</li>
+                    <li class="todo__subitem">Планирование на завтра</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
