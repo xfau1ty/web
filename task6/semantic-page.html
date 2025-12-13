@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантическая разметка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">МойСайт</div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Статьи</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">О нас</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <article class="article">
+            <h1 class="article__title">Введение в веб-разработку</h1>
+            <p class="article__text">Веб-разработка — это процесс создания веб-сайтов и веб-приложений. Она включает в себя множество аспектов: от простой разметки страниц до сложных серверных приложений.</p>
+            <p class="article__text">HTML (HyperText Markup Language) — это стандартный язык разметки для создания веб-страниц. Он определяет структуру и содержимое веб-страницы.</p>
+            <p class="article__text">CSS (Cascading Style Sheets) — это язык стилей, который используется для описания внешнего вида документа, написанного на HTML.</p>
+        </article>
+
+        <aside class="aside">
+            <h3 class="aside__title">Похожие статьи</h3>
+            <ul class="aside__list">
+                <li class="aside__item">Основы HTML5</li>
+                <li class="aside__item">CSS для начинающих</li>
+                <li class="aside__item">JavaScript: первые шаги</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copyright">&copy; 2024 МойСайт. Все права защищены.</p>
+        <ul class="footer__links">
+            <li class="footer__link-item"><a class="footer__link" href="#">Политика конфиденциальности</a></li>
+            <li class="footer__link-item"><a class="footer__link" href="#">Условия использования</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
