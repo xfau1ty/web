@@ -1,0 +1,36 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.counter {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.counter__label {
+    color: #333;
+}
+
+.counter__value {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
