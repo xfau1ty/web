@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кастомные чекбоксы и радиокнопки</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="custom-form">
+        <h1 class="custom-form__title">Кастомные элементы формы</h1>
+        
+        <fieldset class="custom-form__fieldset">
+            <legend class="custom-form__legend">Выберите интересы (чекбоксы)</legend>
+            
+            <div class="custom-form__group">
+                <input type="checkbox" id="web" name="interests" value="web" class="custom-form__checkbox">
+                <label for="web" class="custom-form__label custom-form__label--checkbox">Веб-разработка</label>
+            </div>
+            
+            <div class="custom-form__group">
+                <input type="checkbox" id="design" name="interests" value="design" class="custom-form__checkbox">
+                <label for="design" class="custom-form__label custom-form__label--checkbox">Дизайн</label>
+            </div>
+            
+            <div class="custom-form__group">
+                <input type="checkbox" id="mobile" name="interests" value="mobile" class="custom-form__checkbox">
+                <label for="mobile" class="custom-form__label custom-form__label--checkbox">Мобильная разработка</label>
+            </div>
+            
+            <div class="custom-form__group">
+                <input type="checkbox" id="data" name="interests" value="data" class="custom-form__checkbox">
+                <label for="data" class="custom-form__label custom-form__label--checkbox">Анализ данных</label>
+            </div>
+        </fieldset>
+        
+        <fieldset class="custom-form__fieldset">
+            <legend class="custom-form__legend">Выберите уровень (радиокнопки)</legend>
+            
+            <div class="custom-form__group">
+                <input type="radio" id="beginner" name="level" value="beginner" class="custom-form__radio">
+                <label for="beginner" class="custom-form__label custom-form__label--radio">Начинающий</label>
+            </div>
+            
+            <div class="custom-form__group">
+                <input type="radio" id="intermediate" name="level" value="intermediate" class="custom-form__radio">
+                <label for="intermediate" class="custom-form__label custom-form__label--radio">Средний</label>
+            </div>
+            
+            <div class="custom-form__group">
+                <input type="radio" id="advanced" name="level" value="advanced" class="custom-form__radio">
+                <label for="advanced" class="custom-form__label custom-form__label--radio">Продвинутый</label>
+            </div>
+            
+            <div class="custom-form__group">
+                <input type="radio" id="expert" name="level" value="expert" class="custom-form__radio">
+                <label for="expert" class="custom-form__label custom-form__label--radio">Эксперт</label>
+            </div>
+        </fieldset>
+        
+        <button type="submit" class="custom-form__button">Отправить</button>
+    </form>
+</body>
+</html>

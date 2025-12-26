@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выпадающее меню</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="dropdown-nav">
+        <ul class="dropdown-nav__list">
+            <li class="dropdown-nav__item">
+                <a class="dropdown-nav__link" href="#">Главная</a>
+            </li>
+            <li class="dropdown-nav__item dropdown-nav__item--has-dropdown">
+                <a class="dropdown-nav__link" href="#">Услуги</a>
+                <ul class="dropdown-nav__submenu">
+                    <li class="dropdown-nav__subitem">
+                        <a class="dropdown-nav__sublink" href="#">Веб-разработка</a>
+                    </li>
+                    <li class="dropdown-nav__subitem dropdown-nav__subitem--has-dropdown">
+                        <a class="dropdown-nav__sublink" href="#">Дизайн</a>
+                        <ul class="dropdown-nav__submenu dropdown-nav__submenu--nested">
+                            <li class="dropdown-nav__subitem">
+                                <a class="dropdown-nav__sublink" href="#">UI/UX дизайн</a>
+                            </li>
+                            <li class="dropdown-nav__subitem">
+                                <a class="dropdown-nav__sublink" href="#">Графический дизайн</a>
+                            </li>
+                            <li class="dropdown-nav__subitem">
+                                <a class="dropdown-nav__sublink" href="#">3D моделирование</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-nav__subitem">
+                        <a class="dropdown-nav__sublink" href="#">SEO продвижение</a>
+                    </li>
+                    <li class="dropdown-nav__subitem">
+                        <a class="dropdown-nav__sublink" href="#">Маркетинг</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown-nav__item dropdown-nav__item--has-dropdown">
+                <a class="dropdown-nav__link" href="#">Продукты</a>
+                <ul class="dropdown-nav__submenu">
+                    <li class="dropdown-nav__subitem">
+                        <a class="dropdown-nav__sublink" href="#">CRM система</a>
+                    </li>
+                    <li class="dropdown-nav__subitem">
+                        <a class="dropdown-nav__sublink" href="#">CMS платформа</a>
+                    </li>
+                    <li class="dropdown-nav__subitem">
+                        <a class="dropdown-nav__sublink" href="#">Мобильные приложения</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown-nav__item">
+                <a class="dropdown-nav__link" href="#">О нас</a>
+            </li>
+            <li class="dropdown-nav__item">
+                <a class="dropdown-nav__link" href="#">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="content">
+        <h1>Многоуровневое выпадающее меню</h1>
+        <p>Наведите на пункты меню "Услуги" или "Продукты", чтобы увидеть выпадающие подменю.</p>
+        <p>Пункт "Дизайн" содержит ещё один уровень вложенности.</p>
+    </div>
+</body>
+</html>

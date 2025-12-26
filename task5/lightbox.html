@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея с лайтбоксом</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="gallery-title">Галерея с лайтбоксом</h1>
+    <p class="gallery-subtitle">Нажмите на изображение для просмотра в полном размере</p>
+    
+    <div class="gallery">
+        <a href="#lightbox1" class="gallery__item">
+            <img class="gallery__thumb" src="https://placehold.co/200x200/3498db/ffffff?text=Фото+1" alt="Фото 1">
+        </a>
+        <a href="#lightbox2" class="gallery__item">
+            <img class="gallery__thumb" src="https://placehold.co/200x200/e74c3c/ffffff?text=Фото+2" alt="Фото 2">
+        </a>
+        <a href="#lightbox3" class="gallery__item">
+            <img class="gallery__thumb" src="https://placehold.co/200x200/27ae60/ffffff?text=Фото+3" alt="Фото 3">
+        </a>
+        <a href="#lightbox4" class="gallery__item">
+            <img class="gallery__thumb" src="https://placehold.co/200x200/9b59b6/ffffff?text=Фото+4" alt="Фото 4">
+        </a>
+    </div>
+    
+    <div id="lightbox1" class="lightbox">
+        <a href="#" class="lightbox__close">&times;</a>
+        <div class="lightbox__content">
+            <img class="lightbox__image" src="https://placehold.co/800x600/3498db/ffffff?text=Фото+1+Увеличенное" alt="Фото 1 увеличенное">
+            <p class="lightbox__caption">Фото 1 - Синий</p>
+        </div>
+    </div>
+    
+    <div id="lightbox2" class="lightbox">
+        <a href="#" class="lightbox__close">&times;</a>
+        <div class="lightbox__content">
+            <img class="lightbox__image" src="https://placehold.co/800x600/e74c3c/ffffff?text=Фото+2+Увеличенное" alt="Фото 2 увеличенное">
+            <p class="lightbox__caption">Фото 2 - Красный</p>
+        </div>
+    </div>
+    
+    <div id="lightbox3" class="lightbox">
+        <a href="#" class="lightbox__close">&times;</a>
+        <div class="lightbox__content">
+            <img class="lightbox__image" src="https://placehold.co/800x600/27ae60/ffffff?text=Фото+3+Увеличенное" alt="Фото 3 увеличенное">
+            <p class="lightbox__caption">Фото 3 - Зелёный</p>
+        </div>
+    </div>
+    
+    <div id="lightbox4" class="lightbox">
+        <a href="#" class="lightbox__close">&times;</a>
+        <div class="lightbox__content">
+            <img class="lightbox__image" src="https://placehold.co/800x600/9b59b6/ffffff?text=Фото+4+Увеличенное" alt="Фото 4 увеличенное">
+            <p class="lightbox__caption">Фото 4 - Фиолетовый</p>
+        </div>
+    </div>
+</body>
+</html>
