@@ -1,0 +1,39 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: opacity 0.3s ease;
+}
+
+.box--hidden {
+    display: none;
+}
+
+.button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #F57C00;
+}
